@@ -1,0 +1,32 @@
+server:
+  port: 8080
+
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: false
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQL82Dialect
+    properties:
+      hibernate:
+        dialect: MySQLDialect
+  security:
+    secret: n2r5u8x/A%D*G-KaPdSgVkYp3s6v9y$B&E(H+MbQeThWmZq4t7w!z%C*F-J@NcRf
+
+application:
+  datasource:
+    default:
+      jdbc-url: jdbc:postgresql://localhost:5432/default?useSSL=false
+      username: postgres
+      password: qwe123
+    usa:
+      jdbc-url: jdbc:postgresql://localhost:5432/usa?useSSL=false
+      username: postgres
+      password: qwe123
+    canada:
+      jdbc-url: jdbc:postgresql://localhost:5432/canada?useSSL=false
+      username: postgres
+      password: qwe123
+
